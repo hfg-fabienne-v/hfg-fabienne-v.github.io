@@ -2,6 +2,16 @@
     margin: 0;
     padding: 0;
 }
+
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.intro{
+    display: flex;
+    color: white;
+}
+
 .header{
     min-height: 100vh;
     width: 100%;
