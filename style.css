@@ -19,6 +19,7 @@ body{
 
 .typing{
     margin-left: 10px;
+    color: white;
 }
 
 .typing::after{
