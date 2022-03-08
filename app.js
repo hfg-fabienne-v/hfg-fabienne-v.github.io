@@ -1,4 +1,4 @@
-const text = ['websites', 'applications', 'art', 'pancakes'];
+const text = ['Creative Coder', 'Digital Product Designer', 'Artist', 'Invention Designer', 'UX Designer'];
 let count = 0;
 let index = 0;
 let currentText = '';
@@ -17,7 +17,7 @@ let letter = '';
         count++;
         index = 0; 
     }
-    setTimeout(type, 400);
+    setTimeout(type, 300);
 })();
 
 
