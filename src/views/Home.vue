@@ -42,9 +42,13 @@ export default {
     color: rgb(0, 0, 0);
 }
 img{
+  display: flex;
+  padding: 2% 6%;
+  flex: 1;
+  text-align: right;
   width: 100%;
   max-width: 800px;
   height: auto;
-  padding-left: 100px;
+  padding-right: 10px;
 }
 </style>
