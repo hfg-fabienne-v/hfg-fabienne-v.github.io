@@ -9,26 +9,6 @@
       </ul>
     </div>
   </nav>
-  <!-- </nav>
-    <div class="nav-links">
-    <nav class="navbar navbar-expand-md navbar-dark bg-dark mb-4">
-      <router-link to="/home"><img src="../assets/logo.png"></router-link>
-      <div class="container-fluid">
-        <router-link to="/modules" class="navbar-brand">Work</router-link>
-        <div>
-          <ul class="navbar-nav me-auto mb-2 mb-md-0">
-            <li class="nav-item">
-              <router-link to="/" class="nav-link" aria-current="page">About me</router-link>
-            </li>
-          </ul>
-        </div>
-        <ul class="navbar-nav me-auto mb-2 mb-md-0">
-          <li class="nav-item">
-            <router-link to="/" class="nav-link" aria-current="page">Contact</router-link>
-          </li>
-        </ul>
-      </div>
-     -->
 </template>
 
 <script>
@@ -45,10 +25,11 @@ export default {
 
 <style scoped>
 nav{
-    display: flex;
-    padding: 2% 6%;
-    justify-content: space-between;
-    align-items: center;
+  text-decoration: none;
+  display: flex;
+  padding: 2% 6%;
+  justify-content: space-between;
+  align-items: center;
 }
 
 nav img{
@@ -58,6 +39,7 @@ nav img{
 .nav-links{
     flex: 1;
     text-align: right;
+    color: rgb(59, 135, 115);
 }
 
 .nav-links ul li{
@@ -65,13 +47,13 @@ nav img{
     display: inline-block;
     padding: 8px 12px;
     position: relative;
+    color: rgb(59, 135, 115);
 }
 
-/* .nav-links ul li a{
-    color: rgb(11, 109, 83);
-    text-decoration: none;
-    font-size: 13px;
-} */
+.nav-links ul li:hover{
+    color: rgb(59, 135, 115);
+}
+
 
 .nav-links ul li::after{
     content: "";
@@ -81,9 +63,19 @@ nav img{
     display: block;
     margin: auto;
     transition: 0.5s;
+    color: rgb(59, 135, 115);
 }
 
-.nav-links ul li:hover::after{
-    width: 100%;
+.nav-links ul li:hover:after{
+  color: rgb(59, 135, 115);
+  width: 100%;
+}
+
+a{
+  text-decoration: none;
+}
+
+a:hover{
+  color: rgb(59, 135, 115);
 }
 </style>
