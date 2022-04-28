@@ -9,3 +9,7 @@ $--color-primary: hotpink;
 $--font-path: '~element-plus/lib/theme-chalk/fonts';
 
 @import "~element-plus/packages/theme-chalk/src/index";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;

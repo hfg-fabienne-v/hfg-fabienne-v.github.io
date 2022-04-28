@@ -4,10 +4,13 @@ import router from './router'
 import VueMq from 'vue-mq'
 import { BootstrapVue, IconsPlugin } from 'bootstrap-vue'
 import { LayoutPlugin } from 'bootstrap-vue'
+import './assets/tailwind.css'
+
 //import installElementPlus from './plugins/element'
 
 import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap-vue/dist/bootstrap-vue.css'
+import './assets/tailwind.css'
 
 Vue.config.productionTip = false
 

@@ -19,6 +19,7 @@
 <script>
 // @ is an alias to /src
 import NavigationBar from '@/components/NavigationBar.vue'
+import '../assets/tailwind.css'
 
 export default {
   name: 'homeView',

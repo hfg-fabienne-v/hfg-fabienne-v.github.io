@@ -12,8 +12,8 @@
         <img src="../assets/remotegardening.png" alt="">
         <img src="../assets/plantanical.png" alt=""> -->
         <div class="maincontent">
-          <div class="box">
-            <img src="../assets/wiwa.png" alt="">
+          <router-link to="/wiwa"><div class="box">
+            <router-link to="/wiwa"><img src="../assets/wiwa.png" alt=""></router-link>
             <div class="img-text">
               <div class="content">
                 <h2>WiWa</h2>
@@ -21,11 +21,11 @@
                 </p>
               </div>
             </div>
-          </div>
+          </div></router-link>
           
           <div class="box">
             <img src="../assets/remotegardening.png" alt="">
-            <div class="image-text">
+            <div class="img-text">
               <div class="content">
                 <h2>Remote Gardening</h2>
                 <p> Ein modulares Bewässerungssystem, dass remote angesteuert werden kann
@@ -36,7 +36,7 @@
 
           <div class="box">
             <img src="../assets/plantanical.png" alt="">
-            <div class="image-text">
+            <div class="img-text">
               <div class="content">
                 <h2>Plantanical</h2>
                 <p> Eine App zur Pflanzenüberwachung
@@ -47,7 +47,7 @@
 
           <div class="box">
             <img src="../assets/userjourney.png" alt="">
-            <div class="image-text">
+            <div class="img-text">
               <div class="content">
                 <h2>User Journey Map</h2>
                 <p> Die Darstellung eines Nutzererlebnis während der Interaktion mit einem Wecker
@@ -135,17 +135,46 @@ export default {
 .maincontent .box::before{
   content: '';
   position: absolute;
-
+  top: 0;
+  left: 0;
+  width: 5px;
+  height: 100%;
+  transition: all 0.5s ease-in-out;
 }
 
-.wrapper .maincontent .box img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+.maincontent .box:hover::before{
+  top: 0;
+  right: calc(100% - 5px);
+  z-index: 8;
 }
 
-img{
-    width: 800px;
+.maincontent .box img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.maincontent .box .img-text{
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background: rgba(255, 255, 255, 0.9); */
+  color: white;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: 100%;
+  transition: all 0.5s ease-in-out;
+}
+
+.maincontent .box:hover img{
+  filter: blur(10px);
+}
+
+.maincontent .box:hover .img-text{
+  top: 0;
+  right: 0;
 }
 
 </style>
